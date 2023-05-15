@@ -1,0 +1,60 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Calculator</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>두 수의 덧셈 결과</h1>-->
+<!--&lt;!&ndash;-->
+<!--method="get":Request 요청방식을 GET-->
+<!--HTML에서HTTP 요청방식은 크게 GET/POST 방식으로 나누어진다.-->
+<!--GET:조회/ POST: 수정/생성-->
+<!--&ndash;&gt;-->
+<!--<form method="get" action="/calculator">-->
+<!--    <p>-->
+<!--        &lt;!&ndash; input태그의 name속성이 쿼리스트링의 파라마메터 &ndash;&gt;-->
+<!--        첫 번째 수: <input type="text" name="num1">-->
+<!--    </p>-->
+<!--    <p>-->
+<!--        두 번째 수: <input type="text" name="num2">-->
+<!--    </p>-->
+<!--    <p>-->
+<!--        <button type="submit">덧셈 계산</button>-->
+<!--    </p>-->
+<!--</form>-->
+
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+<h1>두 수의 덧셈 후 곱하기 결과</h1>
+<!--
+method="get":Request 요청방식을 GET
+HTML에서HTTP 요청방식은 크게 GET/POST 방식으로 나누어진다.
+GET:조회/ POST: 수정/생성
+-->
+<form method="get" action="/calculator">
+    <p>
+        <!-- input태그의 name속성이 쿼리스트링의 파라마메터 -->
+        첫 번째 수: <input type="text" name="num1">
+    </p>
+    <p>
+        두 번째 수: <input type="text" name="num2">
+    </p>
+    <p>
+        세 번째 수: <input type="text" name="num3">
+    </p>
+    <p>
+        <button type="submit">덧셈 후 곱하기 계산</button>
+    </p>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="newstyle.css">
+    <style>
+        ul {
+            list-style-type: none;
+        }
+        li {
+            margin-bottom: 9px;
+        }
+        fieldset {
+            text-align: center;
+            margin: 0 auto;
+            padding-top: 50px;
+            width: 500px;
+            border: none;
+            height: auto;
+        }
+        fieldset h1 {
+            text-align: center;
+            font-size: 2.5em;
+            letter-spacing: 3px;
+        }
+        fieldset h2 {
+            text-align: left;
+            margin-left: 10px;
+        }
+        fieldset p{
+            text-align: center;
+        }
+        fieldset a:hover {
+            color: red;
+        }
+        #empty {
+            height: 30px;
+        }
+        label {
+            margin: 20px;
+        }
+        input {
+            height: 35px;
+        }
+        select {
+            height: 35px;
+            width: 250px;
+        }
+        .right {
+            float: right;
+            font-size: 15px;
+            margin-right: 45px;
+        }
+        .loginbox1 {
+            margin: 3px auto;
+            text-align: center;
+            line-height: 50px;
+            background-color: red;
+            color: white;
+            width: 300px;
+            height: 50px;
+            border-radius: 1em;
+        }
+        .loginbox2 {
+            margin: 3px auto;
+            text-align: center;
+            line-height: 50px;
+            background-color: yellowgreen;
+            color: white;
+            width: 300px;
+            height: 50px;
+            border-radius: 1em;
+        }
+        .checkbox {
+            margin-top: 50px;
+        }
+
+        .agree {
+            border: 1px solid black;
+            margin: 1px;
+            padding: 5px;
+            text-align: left;
+        }
+        .agree ul {
+            margin-top: 3px;
+        }
+        .agree li {
+            margin-bottom: 9px;
+        }
+        footer {
+            padding:30px;
+            margin-bottom:0;
+            text-align:center;
+        }
+        footer p{
+            text-align:left;
+            font-size:12px;
+            color:	#696969;
+            padding:5px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div id="head_top">
+        <div id="head_topleft">
+            <ul>
+                <li><a href="bed.html">침실</a></li>
+                <li><a href="#">거실</a></li>
+                <li><a href="#">주방</a></li>
+            </ul>
+        </div>
+        <div id="head_topcenter">
+            <a href="main.html"><img src="img/logo2.png" width="100px" height="40px"></a>
+
+        </div>
+        <div id="head_topright">
+            <ul>
+                <li><a href="event.html">이벤트</a></li>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="mypage1.html">마이페이지</a></li>
+                <li><a href="signup.html">회원가입</a></li>
+                <li><a href="#">주문/배송</a></li>
+                <li><a href="center.html">고객지원</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+    <div id="empty">
+
+    </div>
+    <section>
+   <form>
+       <fieldset>
+           <h1>회원가입</h1>
+           <p>sns계정으로 간편하게 회원가입</p>
+           <img src="img/icon3.png">
+           <hr>
+           <div class="left">
+           <h2>이메일</h2>
+           <ul>
+               <li><label><input type="text" id="user id" size="15" minlength="4" maxlength="15" placeholder=" 아이디(이메일)">@
+               <select>
+                   <option vlaue="naver">naver.com</option>
+                   <option vlaue="daum">daum.net</option>
+                   <option value="google">google.com</option>
+                   <option value="nate">nate.com</option>
+                   <option value="hotmail">hotmail.com</option>
+                   <option value="outlook">outlook.com</option>
+                   <option value="icould">icould.com</option>
+                   <option value="직접입력">직접입력</option>
+               </select>
+
+               </li>
+           </ul>
+               <p class="loginbox1">이메일 인증하기</p>
+           <h2>비밀번호</h2>
+           <p>영문,숫자를 포함한 8자 이상의 비밀번호를 입력해주세요.</p>
+           <ul>
+               <li><label></label><input type="password" id="user_pwd" size="55" placeholder="비밀번호"></li>
+           </ul>
+           <h2>비밀번호 확인</h2>
+           <ul>
+               <li><label></label><input type="password" id="user_pwd" size="55" placeholder="비밀번호 확인"></li>
+           </ul>
+           <h2>닉네임</h2>
+           <p>다른 유저와 겹치지 않도록 입력해주세요.(2~15자)</p>
+           <ul>
+               <li><label></label><input type="password"  size="55" placeholder="별명(2~15자)"></li>
+           </ul>
+           <h2>약관동의</h2>
+           <div class="agree">
+               <ul>
+                   <li><input type="checkbox"><label>
+                       전체동의 선택항목에 대한 동의 포함</label></li>
+                   <li><input type="checkbox">
+                   <label>만 14세 이상입니다(필수)<label></label></li>
+                   <li><input type="checkbox">
+                   <label>이용 약관(필수)</label></li>
+                   <li><input type="checkbox">
+                   <label>개인정보수집 및 이용동의(필수)</label>
+               </li>
+               <li>
+                   <input type="checkbox">
+                   <label>개인정보 마케팅 활용동의(선택)</label>
+               </li>
+               <li>
+                   <input type="checkbox">
+                   <label>이벤트,쿠폰,특가 알람 메일 및 SMS등 수신(선택)</label>
+               </li>
+           </div>
+           </div>
+           <br>
+           <p class="loginbox1">회원가입하기</p>
+
+       </fieldset>
+   </form>
+    </section><br><br>
+<footer style="background-color:#DCDCDC">
+    <p>서울시 송파구 오금로 311 (오금동45-1) (주)일룸 ·대표이사 강성문</p>
+    <p>개인정보보호 책임자 : 강성문</p>
+    <p>사업자등록번호 : 215-86-93600·통신판매업신고 : 2009-서울송파-0069호·부가통신사업신고필증 : 021129</p>
+    <p>호스팅 서비스사업자 · (주)일룸</p>
+    <p>webmaster@iloom.com·Copyright (c) 2018 iloom lnc. All rights reserved</p>
+
+
+</footer>
+</body>
+</html>
